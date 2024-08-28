@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -101,6 +101,31 @@ namespace TARpv23_KirillSats   //ПРЕЖДЕ ЧЕМ ЗАПУСТИТЬ ОДНО
             Console.WriteLine(tulemus);*/
 
             //Päeva number-> päeva nimetus
+
+            string[] nimed = new string[5] { "Anna", "Inna", "Oksana", "Pavel", "Karl" };
+            //1. variant
+            for (int i = 0; 1 < nimed.Length; i++)
+            {
+                Console.WriteLine(nimed[i]);
+            }
+            //2. variant
+            foreach (string nimi in nimed)
+            {
+                Console.WriteLine(nimi);
+            }
+            //3. variant
+            int n = 0;
+            while (n<nimed.Length)
+            {
+                Console.WriteLine(nimed[n]);
+                n++;
+            }
+            //4. variant
+            do
+            {
+                Console.WriteLine(nimed[n-1]);
+                n--;
+            } while (n > 0);
 
             for (int i = 0; 1 < 7; i++)   //цикл, больше 1 и меньше 7. I++ увеличивает на 1. Как только доходит до 7 выходит из цикла
             {
