@@ -75,20 +75,23 @@ namespace TARpv23_KirillSats
         }
 
         //Pikkus #4
-        public string Rost(double kasv)
+        public static string Pikkuse_analuus(double kasv)
         {
-            if (kasv < 160)
-            {
-                return "Pikkus on madal.";
-            }
-            else if (kasv <= 180)
-            {
-                return "Pikkus on keskmine.";
-            }
-            else
-            {
-                return "Pikkus on kõrge.";
-            }
+            string analuus;
+        if (kasv < 1.6)
+        {
+            analuus = "Lühike kasv";
+        
+        }
+        else if (kasv < 1.8)
+        {
+        analuus = "Pikkus on keskmine.";
+        }
+        else
+        {
+        analuus = "Pikkus on kõrge.";
+        }
+        return analuus;
         }
 
     }
