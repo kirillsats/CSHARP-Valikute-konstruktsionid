@@ -91,11 +91,11 @@ namespace TARpv23_KirillSatsˇ               //ПРЕЖДЕ ЧЕМ ЗАПУСТ�
 
             //Pikkus #4
             
-            Console.Write("Sisestage oma pikkus (cm): ");
+            Console.Write("Sisestage oma pikkus (m): ");
             double kasv = double.Parse(Console.ReadLine());
 
-                
-            string tulemus = funktsioonid.Rost(kasv);
+
+            string tulemus = funktsioonid.Pikkuse_analuus(kasv);
 
             Console.WriteLine(tulemus);
             
